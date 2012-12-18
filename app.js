@@ -5,10 +5,10 @@ var resourceful = require('resourceful'),
 
 resourceful.use('memory');
 
-Tasks.property('type', String, { default: "dragon" });
+Tasks.property('keyword', String, { default: "中国移动" });
 Tasks.property('life', Number, { default: 10, minimum: 0, maximum: 20 });
 
-var restful     = require('restful');
+var restful = require('restful');
 //
 // Setup a standalone restful server
 //

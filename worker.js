@@ -1,14 +1,8 @@
-var tasks = require('./tasks');
-
-	
-tasks.start(function(){
-	
-	console.log(tasks.tasks)
-	var ss=tasks.tasks;
-	console.log(ss);
-
-	for(s in ss){
-		console.log(s);
-	}
+var Tasks = require('./tasks');
+Tasks.start(function(tasks){
+	tasks.forEach(function(s){
+			console.log(s.keyword);
+	});
+	console.log(tasks);
 });
 	
