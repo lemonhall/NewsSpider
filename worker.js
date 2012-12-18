@@ -2,6 +2,13 @@ var tasks = require('./tasks');
 
 	
 tasks.start(function(){
-	console.log('2.The answer is', tasks.tasks);	
+	
+	console.log(tasks.tasks)
+	var ss=tasks.tasks;
+	console.log(ss);
+
+	for(s in ss){
+		console.log(s);
+	}
 });
 	
